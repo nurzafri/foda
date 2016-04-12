@@ -1,9 +1,99 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+     <!-- Page Content -->
+    <div class="container">
 
-<%= user_signed_in? ? ((image_tag avatar_url(current_user, 200)).html_safe + current_user.email) : "User" %>               
-<% if user_signed_in? %>
-<%= link_to('<i class="fa fa-key"></i>'.html_safe+'Logout', destroy_user_session_path, :method => :delete) %>
-<% else %>
-<%= link_to('<i class="fa fa-key"></i>'.html_safe+'Login', new_user_session_path)  %>  
-<% end %>
+        <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer">
+            <h1 style="color: black">FODA</h1>
+            <p style="color: black">What is FODA? FODA is a short form of feature oriented domain analysis. FODA is one of the methods in software development. This method focuses on decreasing the efforts in developing a software. With all requirements are store in one place the developer could choose features they wanted to add into the application. In this case, we are focusing on the Let's Go Application. This application is an event based application. </p>
+            <p><!-- <a class="btn btn-primary btn-large">Call to action!</a> -->
+            </p>
+        </header>
+
+        <hr>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 style="color: black">Our Prototype</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="assets/android.jpg" alt="">
+                    <div class="caption">
+                        <h3>Mobile Application</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="http://localhost:8100/ionic-lab" class="btn btn-primary" target="_blank">Live Demo</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="assets/webapp.jpg" alt="">
+                    <div class="caption">
+                        <h3>Web Application</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="http://localhost:3000/" class="btn btn-primary" target="_blank">Live Demo</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="assets/coming-soon.jpg" alt="">
+                    <div class="caption">
+                        <h3>Coming Soon</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="assets/coming-soon.jpg" alt="">
+                    <div class="caption">
+                        <h3>Coming Soon</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Live Demo</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Title -->
+
+            <div>
+                <center><a href="<%= appbuilder_path %>" class="btn btn-primary">Let's Build</a></center>
+            </div>
+        <!-- /.row -->
+
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>

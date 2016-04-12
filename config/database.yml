@@ -3,5 +3,5 @@ development:
   encoding: unicode
   database: foda
   pool: 5
-  username: postgres
+  username: admin
   password: 1234

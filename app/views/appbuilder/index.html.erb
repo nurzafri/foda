@@ -1,0 +1,56 @@
+<div class="main-content">
+
+        <!-- You only need this form and the form-basic.css -->
+
+        <form class="form-basic" method="post" action="#">
+
+            <div class="form-title-row">
+                <h1>Event App Builder</h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Dropdown</span>
+                    <select name="dropdown">
+                        <option>Mobile App</option>
+                        <option>Web App</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label><span>Optional Feature</span></label>
+                <div class="form-checkbox">
+
+                    <div>
+                        <label>
+                            <input type="checkbox" name="feature">
+                            <span>Google Planner</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="checkbox" name="feature">
+                            <span>Todo-List</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="checkbox" name="feature">
+                            <span>ChatBox</span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <a href="<%= root_path %>" class="btn btn-primary">Back</a>
+                <a href="#" class="btn btn-primary">Build</a>
+            </div>
+
+        </form>
+
+    </div>
